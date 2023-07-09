@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+  <span style="display: inline-block;">
+    <%= link_to "Edit", edit_post_path(@post), class: "button is-primary is-light is-small" %>
+  </span>
+  |
+  <span style="display: inline-block;">
+    <%= link_to "Return", posts_path, class: "button is-primary is-light is-small" %>
+  </span>
+  |
+  <span style="display: inline-block;">
+    <%= button_to "Delete", @post, method: :delete, class: "button is-primary is-light is-small" %>
+  </span>
+</div>
+

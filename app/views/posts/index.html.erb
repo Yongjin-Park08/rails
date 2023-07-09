@@ -1,0 +1,24 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>This is my Post Page!</h1>
+
+<div id="posts", class="box">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <div class="block">
+    
+    <p>
+      <%= link_to "Show this post", post, class:"button is-primary is-light" %>
+    </p>
+    </div>
+    <div class="column">
+
+
+
+
+
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New post", new_post_path, class:"button is-primary is-light" %>
